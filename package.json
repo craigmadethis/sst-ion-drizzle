@@ -1,0 +1,30 @@
+{
+  "name": "drizzle-sst3",
+  "type": "module",
+  "module": "esnext",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "sst shell npx tsx ./src/drizzle/migrate.ts"
+  },
+  "keywords": [],
+  "author": "craigmadethis",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-rds-data": "^3.563.0",
+    "@types/aws-lambda": "^8.10.137",
+    "aws-lambda": "^1.0.7",
+    "drizzle-orm": "^0.30.9",
+    "hono": "^4.2.8",
+    "sst": "^3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.1.1",
+    "drizzle-kit": "^0.20.17",
+    "eslint": "^8.57.0",
+    "globals": "^15.0.0",
+    "typescript-eslint": "^7.7.1"
+  }
+}
